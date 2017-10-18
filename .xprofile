@@ -1,0 +1,19 @@
+# needed by fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+# exporting ~/.bin as PATH
+# export in xprofile to enable i3wm executes
+# scipts in ~/.bin
+# what to add to path
+NPATH="$HOME/.bin"
+
+# add it only if required
+case ":${PATH}:" in
+  *:${NPATH}:*) ;;
+  *) PATH=${PATH}:$NPATH ;;
+esac
+
+export PATH
+

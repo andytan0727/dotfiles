@@ -1,0 +1,397 @@
+; vim:ft=dosini
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+[colors]
+;background = #2b303b
+background = #ee292f37
+foreground = #dfdfdf
+alert = #bd2c40
+col = #00f
+bg =    #ee292f37
+maia =  #259E83
+white = #e8e8e8
+red = #f1383d
+pink = #f26262
+grey =  #33
+clear = #00
+
+[bar/andy-bar]
+width = 100%
+height = 24
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = ${colors.red}
+
+underline-size = 0
+overline-size = 0
+
+border-size = 0
+border-bottom-size = 3
+border-color = ${colors.clear}
+;border-bottom-color = #4f5b66
+border-bottom-color = ${colors.pink}
+
+
+;padding-left = 0
+;padding-right = 0
+
+; module-margin-left = 1
+; module-margin-right = 1
+
+padding = 0
+
+font-0 = System San Francisco Display:size=10;2
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+font-3 = FontAwesome:pixelsize=13;3
+
+
+modules-left = i3
+modules-center = clock
+modules-right = redshift volume memory cpu wlan eth battery
+
+tray-position = right
+tray-padding = 4
+tray-background =
+tray-maxsize = 16
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+
+label-layout = %layout%
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.maia}
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground}
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %index%
+label-focused-background = ${colors.background}
+label-focused-padding = 2
+
+label-occupied = %index%
+label-occupied-padding = 2
+
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %index%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 2
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+strip-wsnumbers = true
+
+; ws-icon-[0-9]+ = label;icon
+; NOTE: The label needs to match the name of the i3 workspace
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode-padding = 3
+label-mode-background = #bf616a
+label-mode-foreground = #2b303b
+
+; focused = Active workspace on focused monitor
+label-focused = %index%: %icon%
+label-focused-foreground = #eff1f5
+label-focused-background = #4f5b66
+label-focused-padding = 3
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon%
+label-unfocused-foreground = #eff1f5
+label-unfocused-padding = 4
+
+; visible = Active workspace on unfocused monitor
+label-visible = %icon%
+label-visible-padding = 3
+
+label-visible-foreground = #444
+label-visible-background = #343d46
+
+; urgent = Workspace with urgency hint set
+label-urgent = %index%: %icon%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 3
+
+
+; [module/mpd]
+; type = internal/mpd
+
+; format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+
+
+; icon-prev = 
+; icon-stop = 
+; icon-play = 
+; icon-pause = 
+; icon-next = 
+
+; label-song-maxlen = 50
+; label-song-ellipsis = true
+
+
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+format-prefix = "CPU "
+format-prefix-foreground = ${colors.maia}
+format-padding = 3
+label = %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "RAM "
+format-prefix-foreground = ${colors.maia}
+format-padding = 3
+label = %percentage_used%%
+
+; using external script to monitor network traffic in polybar
+[module/nettraf]
+type = custom/script
+exec = ~/.config/polybar/nettraffic.sh -i wlp3s0 -l -U  -D 
+tail = true
+interval = 1
+format = <label>
+label = %output%
+format-underline = #42f453
+
+[module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+ping-interval = 10
+
+format-connected = %{F#17a086} %{F#e8e8e8}<label-connected>
+format-connected-padding = 2
+
+label-connected = %essid%
+label-disconnected = %{F#17a086}
+format-disconnected-padding = 2
+
+format-connected-foreground = #ffeff1f5
+format-connected-background = #343d46
+format-disconnected-foreground = #ffeff1f5
+format-disconnected-background = #343d46
+
+
+[module/eth]
+type = internal/network
+interface = enp2s0f1
+interval = 3.0
+
+format-connected = %{F#17a086} %{F#e8e8e8}<label-connected>
+label-connected = %local_ip%
+
+[module/clock]
+type = internal/date
+date = %{F#17a086}   %{F#88}%a %b %d   %{F#e8e8e8}%H:%M
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = " %Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = ${colors.foreground}
+format-underline = #0a6cf5
+
+label = %date% %time%
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <bar>
+format-prefix = "BL 🌓 "
+format-prefix-foreground = ${colors.maia}
+
+format-background = #343d46
+format-padding = 2
+
+bar-width = 10
+bar-indicator = 
+bar-indicator-foreground = #ff
+bar-indicator-font = 3
+bar-fill = ─
+bar-fill-font = 3
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 3
+bar-empty-foreground = ${colors.foreground}
+
+[module/volume]
+type = internal/volume
+
+format-volume = <label-volume> <bar-volume>
+format-volume-foreground = #88eff1f5
+;format-volume-background = #343d46
+format-volume-padding = 2
+format-muted-padding = 2
+label-volume = 
+label-volume-foreground = ${colors.maia}
+
+format-muted-prefix = " "
+format-muted-prefix-foreground = ${colors.maia}
+label-muted = sound muted
+format-muted-foreground = #88eff1f5
+format-muted-background = #88343d46
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator =
+;bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 3
+bar-volume-empty = ─
+bar-volume-empty-font = 3
+bar-volume-empty-foreground = ${colors.foreground}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 100
+
+format-full-padding = 3
+format-charging-padding = 3
+format-discharging-padding = 3
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-full = <ramp-capacity> <label-full>
+
+format-full-background = #343d46
+format-charging-background = #343d46
+format-discharging-background = #343d46
+
+;format-charging-underline = #ffb52a
+;format-discharging-underline = ${self.format-charging-underline}
+
+label-full-foreground = ${colors.white}
+label-charging-foreground = ${colors.white}
+label-discharging-foreground = ${colors.white}
+
+label-charging-font = 0
+label-discharging-font = 0
+label-full-font = 0
+
+ramp-capacity-0 = 
+ramp-capacity-0-foreground = ${colors.red}
+ramp-capacity-1 = 
+ramp-capacity-1-foreground = ${colors.maia}
+ramp-capacity-2 = 
+ramp-capacity-2-foreground = ${colors.maia}
+ramp-capacity-3 = 
+ramp-capacity-3-foreground = ${colors.maia}
+ramp-capacity-4 = 
+ramp-capacity-4-foreground = ${colors.maia}
+
+animation-charging-0 = %{F#17a086} 
+animation-charging-1 = %{F#17a086} 
+animation-charging-2 = %{F#17a086} 
+animation-charging-3 = %{F#17a086} 
+animation-charging-4 = %{F#17a086} 
+animation-charging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format-prefix = " "
+format-prefix-foreground = ${colors.maia}
+format = <label>
+format-underline = #f50a4d
+
+label =  %temperature%
+
+[module/redshift]
+type = custom/script
+interval = 20
+exec = ~/.config/polybar/redshiftstatus.sh status
+format-padding = 2
+;format-background = #88343d46
+click-left = ~/.config/polybar/redshiftstatus.sh notif
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5

@@ -1,0 +1,43 @@
+[options]
+font = Droid Sans Mono 13
+
+[colors]
+# special
+foreground = #F9D792
+#background = #301D14   # not working with alpha channel (A-F)
+#background = rgba(39,19,14,0.95)   # deeper red
+background = rgba(49,17,14,0.9)
+cursorColor = #ca8d67
+
+# black
+#color0 = #d8a396
+color0 = #7B2009
+color8 = #e54507
+
+# red
+color1 = #606432
+color9 = #b4c02d
+
+# green
+color2 = #9c5033
+color10 = #666666
+
+# yellow
+color3 = #ad2f1d
+color11 = #b04f41
+
+# blue
+color4  = #cd3e6f
+color12 = #81485c
+
+# magenta
+color5 = #6d826f
+color13 = #6d826f
+
+# cyan
+color6 = #ca8d67
+color14 = #ca8d67
+
+# white
+color7 = #9c6a5e
+color15 = #F4C0B2

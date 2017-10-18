@@ -1,0 +1,52 @@
+[options]
+#font = Droid Sans Mono 13
+#font = DroidSansMono Nerd Font Book 13
+#font = SauceCodePro Nerd Font Book 13
+font = TerminessTTF Nerd Font Bold 14
+
+mouse_autohide = true
+scrollback_lines = -1
+allow_bold = true
+audible_bell = false
+cursor_blink = system
+
+[colors]
+
+# special
+foreground      = #c9bba7
+foreground_bold = #f1fbf6
+cursor          = #fffbf6
+background = rgba(83, 39, 41, 0.90)
+
+# black
+color0  = #753941
+color8  = #ac888d
+
+# red
+color1  = #fcabcf
+color9  = #dcabcf
+
+# green
+color2  = #d1d2d0
+color10 = #fbd2d0
+
+# yellow
+color3  = #feedd6
+color11 = #d1edd6
+
+# blue
+color4  = #dcd7e3
+color12 = #fad7e3
+
+# magenta
+color5  = #feeae8
+color13 = #f1eae8
+
+# cyan
+color6  = #fdc7ea
+color14 = #fef7ea
+
+# white
+color7  = #fffbf6
+color15 = #f1cff6
+
