@@ -3,7 +3,7 @@ configuration {
 	width: 100;
 	lines: 3;
 	columns: 1;
-	font: "SFNS Display 26";
+	font: "SFNS Display 25";
 	bw: 0;
 	//location: 0;
 	padding: 500;
@@ -14,8 +14,8 @@ configuration {
 	auto-select: false;
 	combi-modi: "window,run";
 	matching: "normal";
-	line-margin: 25;
-	line-padding: 1;
+	line-margin: 5;
+	line-padding: 15;
 	separator-style: "solid";
 	hide-scrollbar: true;
 	fake-transparency: false;
@@ -141,3 +141,4 @@ configuration {
 /*	me-accept-entry: "MouseD1";*/
 /*	me-accept-custom: "Control+MouseD1";*/
 }
+

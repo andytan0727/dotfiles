@@ -76,7 +76,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle splits
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -91,7 +91,7 @@ bindsym $mod+space focus mode_toggle
 #bindsym $mod+d focus child
 
 # bind albert 
-bindsym $mod+a exec --no-startup-id albert show
+#bindsym $mod+a exec --no-startup-id albert show
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -279,7 +279,7 @@ exec --no-startup-id xautolock -time 7 -locker blurlock              # autolock 
 # gnome-keyring for authetication purpose
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)
 exec --no-startup-id mpd                                             # music player daemon
-exec --no-startup-id albert                                          # application launcher
+#exec --no-startup-id albert                                          # application launcher
 
 
 # ------------------ END AUTOSTART -------------------
