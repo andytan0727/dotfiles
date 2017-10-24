@@ -8,7 +8,7 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME=""
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -85,6 +85,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
 # loading pure prompt
 autoload -U promptinit; promptinit
 prompt pure
@@ -123,14 +124,20 @@ eval $(dircolors -b ~/.dir_colors)
 
 # workaround with zsh completion dir highlighting
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
-autoload -Uz compinit
-compinit
+
+#autoload -Uz compinit
+#compinit
 
 # sourcing zsh syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ruby gem installation
-export PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
+#export PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
 
 # prevent ranger load two configuration files
 export RANGER_LOAD_DEFAULT_RC=FALSE
+
+# increase zsh autocompletion speed
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache

@@ -90,9 +90,6 @@ bindsym $mod+space focus mode_toggle
 # focus the child container
 #bindsym $mod+d focus child
 
-# bind albert 
-#bindsym $mod+a exec --no-startup-id albert show
-
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -279,7 +276,6 @@ exec --no-startup-id xautolock -time 7 -locker blurlock              # autolock 
 # gnome-keyring for authetication purpose
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)
 exec --no-startup-id mpd                                             # music player daemon
-#exec --no-startup-id albert                                          # application launcher
 
 
 # ------------------ END AUTOSTART -------------------
