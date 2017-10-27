@@ -23,6 +23,9 @@ configuration {
 	color-urgent: "#0000,#e3d3b3,#0000,#0000,#e8d3e4";
 	color-active: "#0000,#e0d3b4,#0000,#0000,#ffffff";
 	color-window: "#bf424ace,#6f424a,#D39FD1";
+
+  plugin-path: "/usr/lib/rofi";
+
 //	yoffset: 0;
 /*	xoffset: 0;*/
 //	fixed-num-lines: true;
@@ -60,7 +63,6 @@ configuration {
 /*	show-match: true;*/
 /*	theme: ;*/
 
-/*	plugin-path: "/usr/lib/rofi";*/
 /*	pid: "/run/user/1000/rofi.pid";*/
 //	display-window: ;
 /*	display-windowcd: ;*/

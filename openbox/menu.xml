@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://openbox.org/">
+  <menu id="root-menu" label="Applications">
+    <item label="File Manager" icon="/home/andy/.config/obmenu-generator/icons/a89362f54b302fc6322da3fec3d3807f.png"><action name="Execute"><command><![CDATA[xdg-open .]]></command></action></item>
+    <item label="Terminal" icon="/home/andy/.config/obmenu-generator/icons/6c516598b471dc663225f400b8a1c615.png"><action name="Execute"><command><![CDATA[termite]]></command></action></item>
+    <item label="Web Browser" icon="/home/andy/.config/obmenu-generator/icons/5d514d3036155b6a6f9655692174d3c6.png"><action name="Execute"><command><![CDATA[xdg-open http://]]></command></action></item>
+    
+    <separator label="Categories"/>
+    <menu id="0.751047377548279" icon="/home/andy/.config/obmenu-generator/icons/6b9b7eec9816faa4f880b1ebc21d2911.png" label="Accessories">
+      <item label="Application Finder" icon="/home/andy/.config/obmenu-generator/icons/c1ad32533020d256c24eb80d1f568424.png"><action name="Execute"><command><![CDATA[xfce4-appfinder]]></command></action></item>
+      <item label="Archive Manager" icon="/home/andy/.config/obmenu-generator/icons/ec6553c39042208e88328e071844fcfe.png"><action name="Execute"><command><![CDATA[file-roller]]></command></action></item>
+      <item label="Bulk Rename" icon="/home/andy/.config/obmenu-generator/icons/a89362f54b302fc6322da3fec3d3807f.png"><action name="Execute"><command><![CDATA[/usr/lib/Thunar/ThunarBulkRename]]></command></action></item>
+      <item label="Character Map" icon="/home/andy/.config/obmenu-generator/icons/2eab743467e92e5f1e2fb82a3a52dd0c.png"><action name="Execute"><command><![CDATA[gucharmap]]></command></action></item>
+      <item label="compton" icon="/home/andy/.config/obmenu-generator/icons/6986eaf875163f4beffbf62db3bb7f57.png"><action name="Execute"><command><![CDATA[compton --xrender-sync-fence]]></command></action></item>
+      <item label="Etcher" icon="/home/andy/.config/obmenu-generator/icons/eae1e896043b52a98ca49112fe37a3ca.png"><action name="Execute"><command><![CDATA["/opt/Etcher/etcher-electron"]]></command></action></item>
+      <item label="Fcitx" icon="/home/andy/.config/obmenu-generator/icons/a09645e1390ef1ed265dd8ab34fea114.png"><action name="Execute"><command><![CDATA[fcitx]]></command></action></item>
+      <item label="KeePass Password Safe" icon="/home/andy/.config/obmenu-generator/icons/5e4013942503ea9a3b6af0e8a319b4d9.png"><action name="Execute"><command><![CDATA[keepass]]></command></action></item>
+      <item label="nitrogen" icon="/home/andy/.config/obmenu-generator/icons/f21bc20e202661aa67c8db3ada1a812e.png"><action name="Execute"><command><![CDATA[nitrogen]]></command></action></item>
+      <item label="Plank" icon="/home/andy/.config/obmenu-generator/icons/11b6ae0a89ef3270a6e39d237ad3e84f.png"><action name="Execute"><command><![CDATA[plank]]></command></action></item>
+      <item label="Redshift" icon="/home/andy/.config/obmenu-generator/icons/6fe58d99f2ef78f702de4e1ac4de0a7b.png"><action name="Execute"><command><![CDATA[redshift-gtk]]></command></action></item>
+      <item label="Run Program..." icon="/home/andy/.config/obmenu-generator/icons/01ecd900b6beb848d0eda0648c809e65.png"><action name="Execute"><command><![CDATA[xfce4-appfinder --collapsed]]></command></action></item>
+      
+    </menu>
+    <menu id="0.994669458220841" icon="/home/andy/.config/obmenu-generator/icons/a82a5c6b0156fa5185f882f1b4a52e47.png" label="Development">
+      <item label="Emacs" icon="/home/andy/.config/obmenu-generator/icons/2a0591ffd09c999998e53373b2040b69.png"><action name="Execute"><command><![CDATA[emacs]]></command></action></item>
+      <item label="GVim" icon="/home/andy/.config/obmenu-generator/icons/a63ef66c127060efb2d498d9b99c3cee.png"><action name="Execute"><command><![CDATA[gvim -f]]></command></action></item>
+      <item label="Visual Studio Code" icon="/home/andy/.config/obmenu-generator/icons/d90870795c21a11f32fd4b1655c72945.png"><action name="Execute"><command><![CDATA[/usr/bin/code]]></command></action></item>
+      <item label="Qt4 Assistant" icon="/home/andy/.config/obmenu-generator/icons/0436824c6c6a8098bb73f4cb76f9158d.png"><action name="Execute"><command><![CDATA[assistant-qt4]]></command></action></item>
+      <item label="Qt4 Designer" icon="/home/andy/.config/obmenu-generator/icons/0436824c6c6a8098bb73f4cb76f9158d.png"><action name="Execute"><command><![CDATA[designer-qt4]]></command></action></item>
+      <item label="Qt4 Linguist" icon="/home/andy/.config/obmenu-generator/icons/0436824c6c6a8098bb73f4cb76f9158d.png"><action name="Execute"><command><![CDATA[linguist-qt4]]></command></action></item>
+      <item label="Qt4 QDbusViewer" icon="/home/andy/.config/obmenu-generator/icons/0436824c6c6a8098bb73f4cb76f9158d.png"><action name="Execute"><command><![CDATA[qdbusviewer-qt4]]></command></action></item>
+
+    </menu>
+    <menu id="0.212947848524106" icon="/home/andy/.config/obmenu-generator/icons/e3d4e077dbc892f9a1ea87d8c6e91886.png" label="Education">
+      <item label="LibreOffice Math" icon="/home/andy/.config/obmenu-generator/icons/a787b4f5909b792baeb00683134c9458.png"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+      <item label="xmaxima" icon="/home/andy/.config/obmenu-generator/icons/a406f9cecbad980280e4fb8d162050fd.png"><action name="Execute"><command><![CDATA[xmaxima]]></command></action></item>
+    </menu>
+
+    <menu id="0.867199643139379" icon="/home/andy/.config/obmenu-generator/icons/2aca1169a2fe02435d0d1e523d174822.png" label="Graphics">
+      <item label="Gpick" icon="/home/andy/.config/obmenu-generator/icons/19c0b7d8be084d74fbc20ca73a55f591.png"><action name="Execute"><command><![CDATA[gpick]]></command></action></item>
+    </menu>
+
+    <menu id="0.616138836730062" icon="/home/andy/.config/obmenu-generator/icons/471bec8e3c2cba1b4f17eef03160e294.png" label="Multimedia">
+      <item label="EasyTAG" icon="/home/andy/.config/obmenu-generator/icons/9f72bc74610c525bdb56e7c7339d1d5e.png"><action name="Execute"><command><![CDATA[easytag]]></command></action></item>
+      <item label="PulseAudio Volume Control" icon="/home/andy/.config/obmenu-generator/icons/2ca6ebb5ec8b38ae077870f54be7c381.png"><action name="Execute"><command><![CDATA[pavucontrol]]></command></action></item>
+      <item label="Qt V4L2 test Utility" icon="/home/andy/.config/obmenu-generator/icons/0ca320f6c9508039741690923341d249.png"><action name="Execute"><command><![CDATA[qv4l2]]></command></action></item>
+      <item label="VLC media player" icon="/home/andy/.config/obmenu-generator/icons/43314f40363274ae02cf36ce425a2660.png"><action name="Execute"><command><![CDATA[/usr/bin/vlc --started-from-file]]></command></action></item>
+    </menu>
+
+    <menu id="0.680674448129125" icon="/home/andy/.config/obmenu-generator/icons/552729d67df2c64ff821a5fbfd19aa02.png" label="Network">
+      <item label="Avahi SSH Server Browser" icon="/home/andy/.config/obmenu-generator/icons/552729d67df2c64ff821a5fbfd19aa02.png"><action name="Execute"><command><![CDATA[/usr/bin/bssh]]></command></action></item>
+      <item label="Avahi VNC Server Browser" icon="/home/andy/.config/obmenu-generator/icons/552729d67df2c64ff821a5fbfd19aa02.png"><action name="Execute"><command><![CDATA[/usr/bin/bvnc]]></command></action></item>
+      <item label="Firefox" icon="/home/andy/.config/obmenu-generator/icons/28edd6cfc42178be62767b78b2985d3c.png"><action name="Execute"><command><![CDATA[/usr/lib/firefox/firefox]]></command></action></item>
+      <item label="Google Chrome" icon="/home/andy/.config/obmenu-generator/icons/0ca12a57277ac3799c9ad7a6c6c054ec.png"><action name="Execute"><command><![CDATA[/usr/bin/google-chrome-stable]]></command></action></item>
+      <item label="Mail Reader" icon="/home/andy/.config/obmenu-generator/icons/63299dd44c5ca6d084b1b7bbb1b6dc2a.png"><action name="Execute"><command><![CDATA[exo-open --launch MailReader]]></command></action></item>
+      <item label="MEGASync" icon="/home/andy/.config/obmenu-generator/icons/948ff814597fdb7fb75f4853a0b159ee.png"><action name="Execute"><command><![CDATA[megasync]]></command></action></item>
+      <item label="uGet" icon="/home/andy/.config/obmenu-generator/icons/d8f9d5a3195e77485a35fad4ddd6c553.png"><action name="Execute"><command><![CDATA[env GDK_BACKEND=x11 uget-gtk]]></command></action></item>
+      <item label="Zenmap (as root)" icon="/home/andy/.config/obmenu-generator/icons/e96c957960fd2d2741811f8672de0b51.png"><action name="Execute"><command><![CDATA[/usr/share/zenmap/su-to-zenmap.sh]]></command></action></item>
+      <item label="Zenmap" icon="/home/andy/.config/obmenu-generator/icons/e96c957960fd2d2741811f8672de0b51.png"><action name="Execute"><command><![CDATA[zenmap]]></command></action></item>
+    </menu>
+
+    <menu id="0.332879680112764" icon="/home/andy/.config/obmenu-generator/icons/72e3ef3ea962f76e5746c2dd74c6fed0.png" label="Office">
+      <item label="Document Viewer" icon="/home/andy/.config/obmenu-generator/icons/bb83f31215a5c02fa3a5e596cefa2867.png"><action name="Execute"><command><![CDATA[evince]]></command></action></item>
+      <item label="LibreOffice Base" icon="/home/andy/.config/obmenu-generator/icons/f2f1dddfb8253647736983461181fd6d.png"><action name="Execute"><command><![CDATA[libreoffice --base]]></command></action></item>
+      <item label="LibreOffice Calc" icon="/home/andy/.config/obmenu-generator/icons/e0a628e4c10da19387dd315a5225d341.png"><action name="Execute"><command><![CDATA[libreoffice --calc]]></command></action></item>
+      <item label="LibreOffice Draw" icon="/home/andy/.config/obmenu-generator/icons/0a91c51c5a546bebacd5b04ff4b88a8a.png"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command></action></item>
+      <item label="LibreOffice Impress" icon="/home/andy/.config/obmenu-generator/icons/bd199b3217e454d118f580ece7198aff.png"><action name="Execute"><command><![CDATA[libreoffice --impress]]></command></action></item>
+      <item label="LibreOffice Math" icon="/home/andy/.config/obmenu-generator/icons/a787b4f5909b792baeb00683134c9458.png"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+      <item label="LibreOffice Writer" icon="/home/andy/.config/obmenu-generator/icons/72e3ef3ea962f76e5746c2dd74c6fed0.png"><action name="Execute"><command><![CDATA[libreoffice --writer]]></command></action></item>
+      <item label="LibreOffice" icon="/home/andy/.config/obmenu-generator/icons/4630df5cf0472f2432d3a69d33f44555.png"><action name="Execute"><command><![CDATA[libreoffice]]></command></action></item>
+      <item label="TeXstudio" icon="/home/andy/.config/obmenu-generator/icons/2245c497fc9d17d0e9a742f9de1a3ccd.png"><action name="Execute"><command><![CDATA[texstudio]]></command></action></item>
+      <item label="Zathura" icon=""><action name="Execute"><command><![CDATA[zathura]]></command></action></item>
+    </menu>
+
+    <menu id="0.965051976306391" icon="/home/andy/.config/obmenu-generator/icons/6b9b7eec9816faa4f880b1ebc21d2911.png" label="Settings">
+      <item label="Accessibility" icon="/home/andy/.config/obmenu-generator/icons/eb54f2bce7fd348e8f4abf3b72bca62b.png"><action name="Execute"><command><![CDATA[xfce4-accessibility-settings]]></command></action></item>
+      <item label="Adobe Flash Player" icon="/home/andy/.config/obmenu-generator/icons/0a1bdf55eae3d7c56f85fa54028caf71.png"><action name="Execute"><command><![CDATA[flash-player-properties]]></command></action></item>
+      <item label="Bluetooth Adapters" icon="/home/andy/.config/obmenu-generator/icons/fb189f9a53ee26422d7224bd134d4baa.png"><action name="Execute"><command><![CDATA[blueman-adapters]]></command></action></item>
+      <item label="Bluetooth Manager" icon="/home/andy/.config/obmenu-generator/icons/fb189f9a53ee26422d7224bd134d4baa.png"><action name="Execute"><command><![CDATA[blueman-manager]]></command></action></item>
+      <item label="Customize Look and Feel" icon="/home/andy/.config/obmenu-generator/icons/2aca1169a2fe02435d0d1e523d174822.png"><action name="Execute"><command><![CDATA[lxappearance]]></command></action></item>
+      <item label="Display" icon="/home/andy/.config/obmenu-generator/icons/dacf458737bb563f576c9ab66edae42a.png"><action name="Execute"><command><![CDATA[xfce4-display-settings]]></command></action></item>
+      <item label="Fcitx Configuration" icon="/home/andy/.config/obmenu-generator/icons/a09645e1390ef1ed265dd8ab34fea114.png"><action name="Execute"><command><![CDATA[fcitx-configtool]]></command></action></item>
+      <item label="File Manager" icon="/home/andy/.config/obmenu-generator/icons/a89362f54b302fc6322da3fec3d3807f.png"><action name="Execute"><command><![CDATA[thunar-settings]]></command></action></item>
+      <item label="Keyboard" icon="/home/andy/.config/obmenu-generator/icons/a09645e1390ef1ed265dd8ab34fea114.png"><action name="Execute"><command><![CDATA[xfce4-keyboard-settings]]></command></action></item>
+      <item label="MIME Type Editor" icon="/home/andy/.config/obmenu-generator/icons/56c426868d0514f3501a188c09e07df5.png"><action name="Execute"><command><![CDATA[xfce4-mime-settings]]></command></action></item>
+      <item label="Mouse and Touchpad" icon="/home/andy/.config/obmenu-generator/icons/923ebddd6c25e6c15343aaf24311c93a.png"><action name="Execute"><command><![CDATA[xfce4-mouse-settings]]></command></action></item>
+      <item label="Network Connections" icon="/home/andy/.config/obmenu-generator/icons/552729d67df2c64ff821a5fbfd19aa02.png"><action name="Execute"><command><![CDATA[nm-connection-editor]]></command></action></item>
+      <item label="Openbox Configuration Manager" icon="/home/andy/.config/obmenu-generator/icons/fe958a05acb458c59556f0e3631f5a6b.png"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
+      <item label="Power Manager" icon="/home/andy/.config/obmenu-generator/icons/8abb726fcd0752f0b22f9d3c52d7b8ef.png"><action name="Execute"><command><![CDATA[xfce4-power-manager-settings]]></command></action></item>
+      <item label="Preferred Applications" icon="/home/andy/.config/obmenu-generator/icons/e74207f674481294062591bd230d1d88.png"><action name="Execute"><command><![CDATA[exo-preferred-applications]]></command></action></item>
+      <item label="Privilege granting" icon="/home/andy/.config/obmenu-generator/icons/f9de8ff797567b0cd0d4b22c132bb7fb.png"><action name="Execute"><command><![CDATA[gksu-properties]]></command></action></item>
+      <item label="Removable Drives and Media" icon="/home/andy/.config/obmenu-generator/icons/8e59be95d7baea8e44e4102883f539a7.png"><action name="Execute"><command><![CDATA[thunar-volman-settings]]></command></action></item>
+      <item label="Session and Startup" icon="/home/andy/.config/obmenu-generator/icons/9b5d0129bc381fe15618bd0bc291fb76.png"><action name="Execute"><command><![CDATA[xfce4-session-settings]]></command></action></item>
+      <item label="Settings Editor" icon="/home/andy/.config/obmenu-generator/icons/1776d2e43a03727403070f14e4798314.png"><action name="Execute"><command><![CDATA[xfce4-settings-editor]]></command></action></item>
+      <item label="Settings Manager" icon="/home/andy/.config/obmenu-generator/icons/1776d2e43a03727403070f14e4798314.png"><action name="Execute"><command><![CDATA[xfce4-settings-manager]]></command></action></item>
+      <item label="Tint2 Settings" icon="/home/andy/.config/obmenu-generator/icons/b70992a2216521ca8b701508430ea7db.png"><action name="Execute"><command><![CDATA[tint2conf]]></command></action></item>
+    </menu>
+
+    <menu id="0.476613860102962" icon="/home/andy/.config/obmenu-generator/icons/588a75d980e3dbd9b37ff4f449834c74.png" label="System">
+      <item label="Avahi Zeroconf Browser" icon="/home/andy/.config/obmenu-generator/icons/552729d67df2c64ff821a5fbfd19aa02.png"><action name="Execute"><command><![CDATA[/usr/bin/avahi-discover]]></command></action></item>
+      <item label="BleachBit" icon="/home/andy/.config/obmenu-generator/icons/85a21ada7cbed153c68ad9468aeaf40c.png"><action name="Execute"><command><![CDATA[bleachbit]]></command></action></item>
+      <item label="Bulk Rename" icon="/home/andy/.config/obmenu-generator/icons/a89362f54b302fc6322da3fec3d3807f.png"><action name="Execute"><command><![CDATA[/usr/lib/Thunar/ThunarBulkRename]]></command></action></item>
+      <item label="Cylon" icon="/home/andy/.config/obmenu-generator/icons/558a7fb7e2307a4de425fa6fe98b1fb0.png"><action name="Execute"><command><![CDATA[xterm -e 'cylon']]></command></action></item>
+      <item label="GParted" icon="/home/andy/.config/obmenu-generator/icons/6070ed350ad20c56205c0de51c1352ae.png"><action name="Execute"><command><![CDATA[/usr/bin/gparted]]></command></action></item>
+      <item label="Htop" icon="/home/andy/.config/obmenu-generator/icons/9374e1e1c32c9577c3a2eb0885b78993.png"><action name="Execute"><command><![CDATA[xterm -e 'htop']]></command></action></item>
+      <item label="MEGASync" icon="/home/andy/.config/obmenu-generator/icons/948ff814597fdb7fb75f4853a0b159ee.png"><action name="Execute"><command><![CDATA[megasync]]></command></action></item>
+      <item label="Oracle VM VirtualBox" icon="/home/andy/.config/obmenu-generator/icons/57dcdb350dc8578803f0195b19f5e4d5.png"><action name="Execute"><command><![CDATA[VirtualBox]]></command></action></item>
+      <item label="ranger" icon="/home/andy/.config/obmenu-generator/icons/6c516598b471dc663225f400b8a1c615.png"><action name="Execute"><command><![CDATA[xterm -e 'ranger']]></command></action></item>
+      <item label="Time Settings" icon="/home/andy/.config/obmenu-generator/icons/97f67f839681bcad3a8e90b2bcf54fa0.png"><action name="Execute"><command><![CDATA[gksudo timeset-gui]]></command></action></item>
+      <item label="TimeSet" icon="/home/andy/.config/obmenu-generator/icons/97f67f839681bcad3a8e90b2bcf54fa0.png"><action name="Execute"><command><![CDATA[xterm -e 'pkexec timeset']]></command></action></item>
+      <item label="urxvt (client)" icon="/home/andy/.config/obmenu-generator/icons/6c516598b471dc663225f400b8a1c615.png"><action name="Execute"><command><![CDATA[urxvtc]]></command></action></item>
+      <item label="urxvt (tabbed)" icon="/home/andy/.config/obmenu-generator/icons/6c516598b471dc663225f400b8a1c615.png"><action name="Execute"><command><![CDATA[urxvt-tabbed]]></command></action></item>
+      <item label="urxvt" icon="/home/andy/.config/obmenu-generator/icons/6c516598b471dc663225f400b8a1c615.png"><action name="Execute"><command><![CDATA[urxvt]]></command></action></item>
+      <item label="UXTerm" icon="/home/andy/.config/obmenu-generator/icons/6c516598b471dc663225f400b8a1c615.png"><action name="Execute"><command><![CDATA[uxterm]]></command></action></item>
+      <item label="Xfce Terminal" icon="/home/andy/.config/obmenu-generator/icons/6c516598b471dc663225f400b8a1c615.png"><action name="Execute"><command><![CDATA[xfce4-terminal]]></command></action></item>
+      <item label="XTerm" icon="/home/andy/.config/obmenu-generator/icons/6c516598b471dc663225f400b8a1c615.png"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
+    </menu>
+
+    <separator/>
+    <menu id="0.00665886706042329" icon="/home/andy/.config/obmenu-generator/icons/588a75d980e3dbd9b37ff4f449834c74.png" label="Advanced Settings">
+      <item label="Tint2 Panel" icon="/home/andy/.config/obmenu-generator/icons/2f00139f20487a2c2bfb0e61eae51be7.png"><action name="Execute"><command><![CDATA[emacs ~/.config/tint2/tint2rc]]></command></action></item>
+      <menu id="0.124649496765226" icon="/home/andy/.config/obmenu-generator/icons/b6a0fd07b73a4472154e3d63f94aa313.png" label="Obmenu-Generator">
+        <item label="Menu Schema" icon="/home/andy/.config/obmenu-generator/icons/2f00139f20487a2c2bfb0e61eae51be7.png"><action name="Execute"><command><![CDATA[emacs ~/.config/obmenu-generator/schema.pl]]></command></action></item>
+        <item label="Menu Config" icon="/home/andy/.config/obmenu-generator/icons/2f00139f20487a2c2bfb0e61eae51be7.png"><action name="Execute"><command><![CDATA[emacs ~/.config/obmenu-generator/config.pl]]></command></action></item>
+        <separator/>
+        <item label="Generate a static menu" icon="/home/andy/.config/obmenu-generator/icons/b6a0fd07b73a4472154e3d63f94aa313.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -c]]></command></action></item>
+        <item label="Generate a static menu with icons" icon="/home/andy/.config/obmenu-generator/icons/b6a0fd07b73a4472154e3d63f94aa313.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -i -c]]></command></action></item>
+        <separator/>
+        <item label="Generate a dynamic menu" icon="/home/andy/.config/obmenu-generator/icons/b6a0fd07b73a4472154e3d63f94aa313.png"><action name="Execute"><command><![CDATA[obmenu-generator -p]]></command></action></item>
+        <item label="Generate a dynamic menu with icons" icon="/home/andy/.config/obmenu-generator/icons/b6a0fd07b73a4472154e3d63f94aa313.png"><action name="Execute"><command><![CDATA[obmenu-generator -p -i]]></command></action></item>
+        <separator/>
+        <item label="Refresh cache" icon="/home/andy/.config/obmenu-generator/icons/1ec876bad261aa1a02e09a14d7e3d3e4.png"><action name="Execute"><command><![CDATA[obmenu-generator -d]]></command></action></item>
+      </menu>
+      <menu id="0.23757779969808" icon="/home/andy/.config/obmenu-generator/icons/2f0d3c9fa56d954ec492905ec8e8101e.png" label="Openbox">
+        <item label="Openbox Autostart" icon="/home/andy/.config/obmenu-generator/icons/2f00139f20487a2c2bfb0e61eae51be7.png"><action name="Execute"><command><![CDATA[emacs ~/.config/openbox/autostart]]></command></action></item>
+        <item label="Openbox RC" icon="/home/andy/.config/obmenu-generator/icons/2f00139f20487a2c2bfb0e61eae51be7.png"><action name="Execute"><command><![CDATA[emacs ~/.config/openbox/rc.xml]]></command></action></item>
+        <item label="Openbox Menu" icon="/home/andy/.config/obmenu-generator/icons/2f00139f20487a2c2bfb0e61eae51be7.png"><action name="Execute"><command><![CDATA[emacs ~/.config/openbox/menu.xml]]></command></action></item>
+        <item label="Reconfigure Openbox" icon="/home/andy/.config/obmenu-generator/icons/2f0d3c9fa56d954ec492905ec8e8101e.png"><action name="Execute"><command><![CDATA[openbox --reconfigure]]></command></action></item>
+      </menu>
+    </menu>
+    <separator/>
+    <menu id="exit-menu" label="Exit">
+	  <item label="Log Out">
+		<action name="Execute">
+		  <command>openbox --exit</command>
+		</action>
+	  </item>
+	  <item label="Shutdown">
+		<action name="Execute">
+		  <command>systemctl poweroff</command>
+		</action>
+	  </item>
+	  <item label="Restart">
+		<action name="Execute">
+		  <command>systemctl reboot</command>
+		</action>
+	  </item>
+	  <item label="Suspend">
+		<action name="Execute">
+		  <command>systemctl suspend</command>
+		</action>
+	  </item>
+	  <item label="Hibernate">
+		<action name="Execute">
+		  <command>systemctl hibernate</command>
+		</action>
+	  </item>
+    </menu>
+  </menu>
+</openbox_menu>
