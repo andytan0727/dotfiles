@@ -1,7 +1,4 @@
 [options]
-#font = Droid Sans Mono 13
-#font = DroidSansMono Nerd Font Book 13
-#font = SauceCodePro Nerd Font Book 13
 font = TerminessTTF Nerd Font Bold 14
 
 mouse_autohide = true
@@ -11,42 +8,51 @@ audible_bell = false
 cursor_blink = system
 
 [colors]
+# Base16 Gruvbox dark, medium
+# Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
-# special
-foreground      = #c9bba7
-foreground_bold = #f1fbf6
-cursor          = #fffbf6
-background = rgba(83, 39, 41, 0.80)
+foreground      = #d5c4a1
+foreground_bold = #ebdbb2
+cursor          = #ebdbb2
+#background      = #282828
+background      = rgba(28,28,28,0.80)
 
-# black
-color0  = #753941
-color8  = #ac888d
+# 16 color space
 
-# red
-color1  = #fcabcf
-color9  = #dcabcf
+# Black, Gray, Silver, White
+color0  = #282828
+color8  = #665c54
+color7  = #d5c4a1
+color15 = #fbf1c7
 
-# green
-color2  = #d1d2d0
-color10 = #fbd2d0
+# Red
+color1  = #fb4934
+color9  = #fb4934
 
-# yellow
-color3  = #feedd6
-color11 = #d1edd6
+# Green
+color2  = #b8bb26
+color10 = #b8bb26
 
-# blue
-color4  = #dcd7e3
-color12 = #fad7e3
+# Yellow
+color3  = #fabd2f
+color11 = #fabd2f
 
-# magenta
-color5  = #feeae8
-color13 = #f1eae8
+# Blue
+color4  = #83a598
+color12 = #83a598
 
-# cyan
-color6  = #fdc7ea
-color14 = #fef7ea
+# Purple
+color5  = #d3869b
+color13 = #d3869b
 
-# white
-color7  = #fffbf6
-color15 = #f1cff6
+# Teal
+color6  = #8ec07c
+color14 = #8ec07c
 
+# Extra colors
+color16 = #fe8019
+color17 = #d65d0e
+color18 = #3c3836
+color19 = #504945
+color20 = #bdae93
+color21 = #ebdbb2
