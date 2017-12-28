@@ -6,4 +6,4 @@
 #
 
 [[ -f ~/.extend.xsession ]] && . ~/.extend.xsession
-xset r rate 250 25
+xset r rate 250 25  # faster key rate

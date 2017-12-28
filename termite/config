@@ -1,5 +1,5 @@
 [options]
-font = TerminessTTF Nerd Font Bold 14
+font = TerminessTTF Nerd Font Bold 13
 
 mouse_autohide = true
 scrollback_lines = -1
@@ -15,7 +15,7 @@ foreground      = #d5c4a1
 foreground_bold = #ebdbb2
 cursor          = #ebdbb2
 #background      = #282828
-background      = rgba(28,28,28,0.80)
+background      = rgba(28,28,28,0.85)
 
 # 16 color space
 

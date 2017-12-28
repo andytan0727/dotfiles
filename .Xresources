@@ -7,6 +7,9 @@
 ! config can be added there or also here below.
 ! For comments use "!"
 
+
+! Configurations for urxvt terminal
+
 Xft.dpi:                96
 Xft.autohint:           0       
 Xft.antialias:          true
