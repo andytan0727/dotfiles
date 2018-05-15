@@ -17,25 +17,28 @@
 #xfce-mcs-manager &
 
 # compton
-compton -fb &
+# compton -fb &
+
+# wallpaper
+nitrogen --restore &
 
 # dunst
 dunst -config ~/.config/dunst/dunstrc &
 
 # redshift
-redshift -b 0.9:1 -l geoclue2 -t 5500:4500 &
+# redshift -b 0.9:1 -l geoclue2 -t 5500:4500 &
 
 # autolock
-xautolock -time 7 -locker blurlock &
+# xautolock -time 7 -locker blurlock &
 
 # mpd
-mpd &
+# mpd &
 
 # polybar
 #/home/andy/.config/polybar/poly_launch.sh &
 
 # plank dock
-plank &
+# plank &
 
 # tint2
 tint2 &
@@ -51,10 +54,10 @@ pa-applet &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
 
 # conky
-/home/andy/.config/conky/reddish/conky_launch.sh &
-
-# wallpaper
-nitrogen --restore &
+# /home/andy/.config/conky/reddish/conky_launch.sh &
 
 # xfce4 power manager
 xfce4-power-manager &
+
+# xmodmap
+xmodmap ~/.Xmodmap &

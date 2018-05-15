@@ -39,7 +39,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Natura</name>
+    <name>Vent</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -119,13 +119,13 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>10</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Terminal</name>
-      <name>Chrome</name>
-      <name>Music</name>
-      <name>Firefox</name>
+      <name>Main</name>
+      <name>Audio</name>
+      <name>VPN</name>
+      <name>Misc</name>
       <name>Video</name>
       <name>Files</name>
       <name>VirtualBox</name>
@@ -362,7 +362,7 @@
     </keybind>
     <keybind key="W-d">
       <action name="Execute">
-        <command>rofi -show run</command>
+        <command>~/.bin/rofi-custom</command>
       </action>
     </keybind>
     <keybind key="W-e">
@@ -372,22 +372,22 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>termite</command>
+        <command>hyper</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>setvolume up</command>
+        <command>~/.bin/setvolume up</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>setvolume down</command>
+        <command>~/.bin/setvolume down</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>setvolume mute</command>
+        <command>~/.bin/setvolume mute</command>
       </action>
     </keybind>
   </keyboard>

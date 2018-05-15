@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Enter /path/to/rofi-custom to execute
+# i.e, in openbox, add a keybinding to
+# /path/to/rofi-custom in rc.xml to execute it
+
+rofi -sidebar-mode \
+-modi run,drun,window \
+-lines 12 \
+-padding 18 \
+-width 60 \
+-location 0 \
+-show drun \
+-columns 2 \
+-font "Noto Sans 12"

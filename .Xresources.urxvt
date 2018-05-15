@@ -1,0 +1,114 @@
+#if __has_include(".extend.Xresources")
+#include ".extend.Xresources"
+#endif
+
+! ^ The above lines are no comments!
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
+! config can be added there or also here below.
+! For comments use "!"
+
+
+! Configurations for urxvt terminal
+
+Xft.dpi:                96
+Xft.autohint:           0       
+Xft.antialias:          true
+Xft.rgba:               rgb
+Xft.hinting:            true
+Xft.lcdfilter:          lcddefault
+Xft.hintstyle:          hintsfull
+
+XTerm*background: #2b2b2b
+XTerm*foreground: #e7e7e7
+XTerm*pointerColor: #16A085
+XTerm*faceName: Fixed
+XTerm*faceSize: 11
+
+URxvt.font: xft:Monaco:size=12
+URxvt.imFont: xft:Monaco:size=12
+URxvt.boldFont: xft:Monaco:size=12
+URxvt.italicFont: xft:Monaco:size=12
+URxvt.boldItalicFont: xft:Monaco:size=12
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.fading:               0
+! ! URxvt.urgentOnBell:         true
+! ! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            1000
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+! ! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! ! Perl extensions
+URxvt.perl-ext-common:      default,clipboard,matcher,keyboard-select
+URxvt.keysym.M-u: perl:     url-select:select_next
+URxvt.url-select.autocopy:  true
+URxvt.url-select.button:    2
+URxvt.url-select.underline: true
+URxvt.url-launcher:         /usr/bin/google-chrome-stable
+URxvt.matcher.button:       1
+
+!! Tabs
+URxvt.tabbed.tabbar-bg:  -1
+URxvt.tabbed.tabbar-fg:  -2
+URxvt.tabbed.tab-bg:     -2
+URxvt.tabbed.tab-fg:     -1
+URxvt.tabbed.title-bg:   -1
+URxvt.tabbed.title-fg:   -2
+URxvt.tabbed.autohide:   true
+URxvt.tabbed.new-button: false
+URxvt.tabbed.title:      true
+
+! disable ctrl-shift feature
+URxvt.iso14755:            false
+URxvt.iso14755_52:         false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+! CopyPaste Keys
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+
+! special
+*.foreground:   #f9d792
+*.background:   #491713
+*.cursorColor:  #f9d792
+
+! black
+*.color0:       #d8a396
+*.color8:       #e54507
+
+! red
+*.color1:       #606432
+*.color9:       #b4c02d
+
+! green
+*.color2:       #9c5033
+*.color10:      #666666
+
+! yellow
+*.color3:       #ad2f1d
+*.color11:      #b04f41
+
+! blue
+*.color4:       #cd3e6f
+*.color12:      #81485c
+
+! magenta
+*.color5:       #6d826f
+*.color13:      #6d826f
+
+! cyan
+*.color6:       #ca8d67
+*.color14:      #ca8d67
+
+! white
+*.color7:       #9c6a5e
+*.color15:      #f4c0b2
+

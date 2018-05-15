@@ -1,0 +1,137 @@
+#!/bin/bash
+
+now=$(date +%a-%b-%F-%H:%M)
+
+echo "-------------------- " $now " --------------------"
+echo "starting i3 backup..."
+
+# backup i3 settings from local system to Google Drive using rsync
+rsync -av --delete ~/.config/i3/ ~/google/arch/dotfiles/i3/
+
+
+echo "-------------------------------------------------"
+echo "starting compton config file backup..."
+
+# backup compton settings from local system to Google Drive
+cp -u ~/.config/compton.conf ~/google/arch/dotfiles/compton.conf
+
+
+echo "-------------------------------------------------"
+echo "starting conky backup..."
+
+# backup conky settings from local system to Google Drive using rsync
+rsync -av --delete ~/.config/conky/ ~/google/arch/dotfiles/conky/
+
+
+echo "-------------------------------------------------"
+echo "starting .dir_colors backup..."
+
+# config file that changes the colors of ls command
+cp -u ~/.dir_colors ~/google/arch/dotfiles/.dir_colors
+
+
+echo "-------------------------------------------------"
+echo "starting dunst backup..."
+
+# backup dunst settings from local system to Google Drive using rsync
+rsync -av --delete ~/.config/dunst/ ~/google/arch/dotfiles/dunst/
+
+
+echo "-------------------------------------------------"
+echo "starting mpd backup..."
+
+# backup mpd settings from local system to Google Drive using rsync
+#rsync -av --delete ~/.config/mpd/ ~/google/arch/dotfiles/mpd/
+cp -u ~/.config/mpd/mpd.conf ~/google/arch/dotfiles/mpd/
+
+
+echo "-------------------------------------------------"
+echo "starting ncmpcpp backup..."
+
+# backup ncmpcpp settings from local system to Google Drive using rsync
+rsync -av --delete ~/.config/ncmpcpp/ ~/google/arch/dotfiles/ncmpcpp/
+
+
+echo "-------------------------------------------------"
+echo "starting openbox backup..."
+
+# backup openbox settings from local system to Google Drive using rsync
+rsync -av --delete ~/.config/openbox/ ~/google/arch/dotfiles/openbox/
+
+
+echo "-------------------------------------------------"
+echo "starting polybar backup..."
+
+# backup polybar settings from local system to Google Drive using rsync
+rsync -av --delete ~/.config/polybar/ ~/google/arch/dotfiles/polybar/
+
+
+echo "-------------------------------------------------"
+echo "starting rofi backup..."
+
+# backup rofi settings from local system to Google Drive using rsync
+rsync -av --delete ~/.config/rofi/ ~/google/arch/dotfiles/rofi/
+
+
+echo "-------------------------------------------------"
+echo "starting termite backup"
+
+# backup termite settings from local system to Google Drive using rsync
+rsync -av --delete --exclude '/themes' ~/.config/termite/ ~/google/arch/dotfiles/termite/
+
+
+echo "-------------------------------------------------"
+echo "starting terminator config backup..."
+
+# backup terminator settings from local system to Google Drive using rsync
+rsync -avz --delete --exclude '/themes' ~/.config/terminator/ ~/google/arch/dotfiles/terminator/
+
+
+echo "-------------------------------------------------"
+echo "starting tint2 config backup..."
+
+# backup tint2 settings from local system to Google Drive using rsync
+rsync -avz --delete ~/.config/tint2/ ~/google/arch/dotfiles/tint2/
+
+
+echo "-------------------------------------------------"
+echo "starting .tmux.conf backup..."
+cp -u ~/.tmux.conf ~/google/arch/dotfiles/.tmux.conf
+
+
+echo "-------------------------------------------------"
+echo "starting vis backup..."
+
+# backup vis settings from local system to Google Drive using rsync
+rsync -av --delete ~/.config/vis/ ~/google/arch/dotfiles/vis/
+
+
+echo "-------------------------------------------------"
+echo "starting .vim directory backup..."
+
+# backup .vim from local system to Google Drive using rsync
+rsync -av --delete ~/.vim/ ~/google/arch/.vim/
+
+
+echo "-------------------------------------------------"
+echo "starting .vimrc backup..."
+
+# backup vim settings from local system to Google Drive using rsync
+cp -u ~/.vimrc ~/google/arch/dotfiles/.vimrc
+
+
+echo "-------------------------------------------------"
+echo "starting X config files backup..."
+cp -u -t ~/google/arch/dotfiles/ ~/.Xmodmap ~/.Xresources ~/.xinitrc ~/.xprofile ~/.xsession
+
+
+echo "-------------------------------------------------"
+echo "starting .zshrc backup..."
+cp -u ~/.zshrc ~/google/arch/dotfiles/.zshrc
+
+
+echo ""
+echo "finished successfully..."
+echo "exiting..."
+
+exit 0
