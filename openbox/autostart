@@ -17,7 +17,7 @@
 #xfce-mcs-manager &
 
 # compton
-# compton -fb &
+compton -fb &
 
 # wallpaper
 nitrogen --restore &
