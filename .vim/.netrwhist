@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/andy/.vim'
+let g:netrw_dirhist_2='/home/andy/Node_and_Express/meadowlark/.git'
+let g:netrw_dirhist_3='/home/andy/.zprezto'
+let g:netrw_dirhist_4='/home/andy/.hyper_plugins/node_modules'
+let g:netrw_dirhist_5='/home/andy/.hyper_plugins/node_modules/color-string'
+let g:netrw_dirhist_6='/home/andy/.jupyter'
+let g:netrw_dirhist_7='/home/andy/dotfiles/dunst/dunst'
+let g:netrw_dirhist_8='/etc/X11/xorg.conf.d'
