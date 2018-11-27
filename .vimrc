@@ -90,6 +90,13 @@ set guioptions+=a
 "let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
 
+" Install vim-plug if does not exist
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " --------------------- vim-plug --------------------- "
 " visit github page of vimplug for more information "
 
