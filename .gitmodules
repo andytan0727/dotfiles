@@ -4,3 +4,6 @@
 [submodule ".tmux"]
 	path = .tmux
 	url = https://github.com/andytan0727/.tmux
+[submodule "prezto"]
+	path = prezto
+	url = https://github.com/andytan0727/prezto
