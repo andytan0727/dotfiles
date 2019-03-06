@@ -1,0 +1,3 @@
+[submodule "neovim-init.vim"]
+	path = neovim-init.vim
+	url = https://github.com/andytan0727/neovim-init.vim
